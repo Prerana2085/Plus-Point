@@ -45,7 +45,7 @@ const RoomPage =()=>{
             sharedLinks:[
                 {
                 name:'Copy Link',
-                url:`http://https://plus-point.vercel.app/room/${roomId}`
+                url:`https://plus-point.onrender.com/room/${roomId}`
                 }
             ],
             scenario:{
