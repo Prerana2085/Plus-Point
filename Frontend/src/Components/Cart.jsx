@@ -12,7 +12,7 @@ function Cart() {
   const [notification, setNotification] = useState("");
   const [totalPrice, setTotalPrice] = useState(0);
   const userId =    "exampleUserId"; // Replace with actual user ID logic
-  const BASE_URL = "http://localhost:5000";
+  const BASE_URL = "https://plus-point-backend-medicine.onrender.com";
   const navigate = useNavigate();
 
   const fetchCartData = () => {

@@ -25,7 +25,7 @@ const Checkout = () => {
     setError(null); // Clear any previous errors
 
     try {
-      const response = await fetch("http://localhost:5000/create-checkout-session", {
+      const response = await fetch("https://plus-point-backend-medicine.onrender.com/create-checkout-session", {
         method: "POST",
         body: JSON.stringify({ items: cartItems }),  // Send cart items dynamically
         headers: {

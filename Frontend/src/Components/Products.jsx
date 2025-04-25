@@ -7,7 +7,7 @@ const Products = () => {
   const [loading, setLoading] = useState(true); 
   const [error, setError] = useState(null); 
 
-  const BASE_URL = "http://localhost:5000"; 
+  const BASE_URL = "https://plus-point-backend-medicine.onrender.com"; 
 
   useEffect(() => {
     setLoading(true);
@@ -51,7 +51,7 @@ const Products = () => {
            <img
   src={
     product.imageUrl
-      ? `http://localhost:5000/images/${product.imageUrl}`
+      ? `https://plus-point-backend-medicine.onrender.com/images/${product.imageUrl}`
       : 'path/to/placeholder.jpg'
   }
   alt={product.name}

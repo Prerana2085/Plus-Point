@@ -9,7 +9,7 @@ function Shop() {
   const [products, setProducts] = useState([]);
   const userId = "exampleUserId";
 
-  const BASE_URL = "http://localhost:5000"; 
+  const BASE_URL = "https://plus-point-backend-medicine.onrender.com"; 
 
   useEffect(() => {
     fetch(`${BASE_URL}/api/categories`)
@@ -75,7 +75,7 @@ function Shop() {
                 <Link to={`/product/${product._id}`} className="product-card-link">
   <div>
     <img
-      src={`http://localhost:5000/images/${product.imageUrl}`} 
+      src={`https://plus-point-backend-medicine.onrender.com/images/${product.imageUrl}`} 
       alt={product.name}
       className="product-image1"
     />
