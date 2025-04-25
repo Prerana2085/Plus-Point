@@ -446,7 +446,7 @@ const DoctorDashboard = () => {
                   <td className="px-4 py-3">
                     <button
                       onClick={() =>
-                        window.open(`http://localhost:5173/room/${apt.token}`, "_blank")
+                        window.open(`https://plus-point.vercel.app/room/${apt.token}`, "_blank")
                       }
                       className="bg-green-500 hover:bg-green-600 text-white px-3 py-1 rounded text-xs"
                     >
