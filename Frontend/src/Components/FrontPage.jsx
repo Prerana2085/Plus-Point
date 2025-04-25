@@ -70,7 +70,7 @@ const FrontPage = () => {
     const handleContact= async(e)=>{
         e.preventDefault();
         try {
-            const res = await fetch("http://localhost:4000/admin/adminemail", {
+            const res = await fetch("https://plus-point-backend.onrender.com/admin/adminemail", {
                 method:"POST",
                 headers: {
                     "Content-Type": "application/json",

@@ -19,7 +19,7 @@ export const MainPage = () => {
   const getUserData=async()=>{
     try{
 const res = await axios.post(
-  "http://localhost:4000/getUserData",
+  "https://plus-point-backend.onrender.com/getUserData",
   {},
   {
     headers: {

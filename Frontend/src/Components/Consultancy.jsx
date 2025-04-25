@@ -100,7 +100,7 @@ const Consultancy = () => {
     console.log("payload", payload);
     
     try {
-      const response = await axios.post('http://localhost:4000/Consultancy', payload);
+      const response = await axios.post('https://plus-point-backend.onrender.com/Consultancy', payload);
       if (response) {
         
         console.log('Response Data:', response); // Only logs the data part of the response

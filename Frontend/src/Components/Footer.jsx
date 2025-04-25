@@ -77,7 +77,7 @@ export const Footer = () => {
     e.preventDefault();
   
     try {
-      const response = await fetch("http://localhost:4000/api/send-email", {
+      const response = await fetch("https://plus-point-backend.onrender.com/api/send-email", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

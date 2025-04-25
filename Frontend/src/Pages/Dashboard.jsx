@@ -65,7 +65,7 @@ function Dashboard() {
   useEffect(() => {
     const fetchDoctors = async () => {
       try {
-        const res = await axios.get("http://localhost:4000/api/getAllDoctors",{
+        const res = await axios.get("https://plus-point-backend.onrender.com/api/getAllDoctors",{
           headers: {
             "Content-Type": "application/json",
             Authorization: `Bearer ${localStorage.getItem("token")}`,

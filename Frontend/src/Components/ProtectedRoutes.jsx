@@ -13,7 +13,7 @@ export default function ProtectedRoutes({children}) {
     const getUser =async()=>{
         try{
             dispatch(showLoading);
-            const resp=await axios.post('http://localhost:4000/getUserData', {
+            const resp=await axios.post('https://plus-point-backend.onrender.com/getUserData', {
                 token:localStorage.getItem('token')},
                 {
                 headers:{

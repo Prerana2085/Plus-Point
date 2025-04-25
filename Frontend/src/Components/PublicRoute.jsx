@@ -9,7 +9,7 @@ export default function PublicRoute({children}) {
   const getUser=async()=>{
     try{
       dispatch(showLoading);
-      const resp=await axios.post('http://localhost:4000', 
+      const resp=await axios.post('https://plus-point-backend.onrender.com', 
         {token :localStorage.getItem('token')}
          )                                                                                                                                                                                                                                                                                                                                ```e{
     return children;

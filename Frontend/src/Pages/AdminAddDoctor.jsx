@@ -17,7 +17,7 @@ function AdminAddDoctor() {
     const handleSubmit = async (e)=>{
         e.preventDefault();
         try {
-            const res = await axios.post('http://localhost:4000/api/addDoctor', doctorData,{
+            const res = await axios.post('https://plus-point-backend.onrender.com/api/addDoctor', doctorData,{
                 headers: {
                     'Content-Type': 'application/json',
                     'Authorization': `Bearer ${localStorage.getItem('token')}`

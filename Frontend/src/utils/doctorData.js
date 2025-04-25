@@ -5,7 +5,7 @@ const doctorData = async () => {
   try {
     console.log("hello")
     const token = localStorage.getItem("token");
-    const response = await axios.get("http://localhost:4000/doctor/doctor-only", {
+    const response = await axios.get("https://plus-point-backend.onrender.com/doctor/doctor-only", {
       headers: { Authorization: `Bearer ${token}` },
     });
     console.log(response.data);

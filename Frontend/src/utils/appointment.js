@@ -5,7 +5,7 @@ const fetchAppointmentsForDoctor = async (doctor) => {
   try {
     const token = localStorage.getItem("token");
     const response = await axios.get(
-      `http://localhost:4000/doctor/appointments/${doctor}`,
+      `https://plus-point-backend.onrender.com/doctor/appointments/${doctor}`,
       {
         headers: { Authorization: `Bearer ${token}` },
         // params: { doctor },

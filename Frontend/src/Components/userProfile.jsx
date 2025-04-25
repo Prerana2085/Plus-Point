@@ -31,7 +31,7 @@ const UserProfile = () => {
       
       // Fetch the user profile data using the decoded token
       axios
-        .get('http://localhost:4000/user', { 
+        .get('https://plus-point-backend.onrender.com/user', { 
             headers: {
                 Authorization: `Bearer ${token}`,
             },
@@ -74,7 +74,7 @@ const UserProfile = () => {
     const token = localStorage.getItem('token');
 
     axios
-      .put('http://localhost:4000/user', { ...formData }, {
+      .put('https://plus-point-backend.onrender.com/user', { ...formData }, {
         headers: {
           Authorization: `Bearer ${token}`
         }
@@ -192,7 +192,7 @@ export default UserProfile;
 //       console.log('User ID:', userId);
 //       // Fetch the user profile data using the userId
 //       axios
-//         .get(`http://localhost:4000/users/Profile`, { 
+//         .get(`https://plus-point-backend.onrender.com/users/Profile`, { 
 //             params: { userId },
 //             headers: {
 //                 Authorization: `Bearer ${localStorage.getItem('token')}`,

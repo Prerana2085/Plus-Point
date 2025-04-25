@@ -10,7 +10,7 @@ export const Home = () => {
   // login user data
   const getUserData = async()=>{
     try{
-      const res=await axios.post('http://localhost:4000/getUserData',{},{
+      const res=await axios.post('https://plus-point-backend.onrender.com/getUserData',{},{
         headers:{
           Authorization:'Bearer ' + localStorage.getItem("token"),
         },

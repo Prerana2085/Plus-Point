@@ -29,7 +29,7 @@
 
 //     try {
 //       dispatch(showLoading());
-//       const resp = await axios.post('http://localhost:4000/Register', details); 
+//       const resp = await axios.post('https://plus-point-backend.onrender.com/Register', details); 
 //       dispatch(hideLoading());
 //       if (resp.data.success) {
 //         message.success(`Registered Successfully. Hi, ${details.name}`); // Success
@@ -128,7 +128,7 @@ export const Register = () => {
 
     try {
       dispatch(showLoading());
-      const resp = await axios.post('http://localhost:4000/Register', details, {  // axios for server communication to send the data
+      const resp = await axios.post('https://plus-point-backend.onrender.com/Register', details, {  // axios for server communication to send the data
         headers:{
           "Content-Type": 'application/json',
         }

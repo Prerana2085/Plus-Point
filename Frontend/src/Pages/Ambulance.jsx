@@ -55,7 +55,7 @@ const Ambulance = () => {
     try {
       setStatus("Calling ambulance...");
       const response = await axios.post(
-        "http://localhost:4000/ambulance/2010-04-01/Accounts/AC9c5bc40d70deddac9275d8792033359b/Calls"
+        "https://plus-point-backend.onrender.com/ambulance/2010-04-01/Accounts/AC9c5bc40d70deddac9275d8792033359b/Calls"
       );
       setStatus(`✅ Call initiated! Call SID: ${response.data.sid}`);
     } catch (error) {
