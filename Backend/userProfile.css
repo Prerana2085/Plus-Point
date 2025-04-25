@@ -1,0 +1,195 @@
+/* Reset some default styles */
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Profile container styling */
+  /* .profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: auto;
+  } */
+  
+  /* User info section styling */
+  /* .user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  } */
+  
+  /* .user-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 3px solid #ddd;
+  } */
+  
+  /* .user-details h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  } */
+  
+  /* .user-details p {
+    font-size: 16px;
+    color: #555;
+  } */
+  
+  /* Tab container and styling */
+  /* .tabs-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+   */
+  /* .tab {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  } */
+  
+  /* .tab.active {
+    background-color: #4CAF50;
+    color: white;
+  } */
+  
+  /* .tab:hover {
+    background-color: #ddd;
+  }
+   */
+  /* Tab content styling */
+  /* .tab-content {
+    text-align: center;
+  } */
+  
+  /* .tab-content h3 {
+    font-size: 20px;
+    color: #333;
+  } */
+  
+  /* .tab-content p {
+    color: #777;
+  } */
+
+
+/* 
+  this is the improved code from chatgpt */
+   
+
+
+  /* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Profile container styling */
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background-color: #003366; /* Navy Blue Background */
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(255, 193, 7, 0.3); /* Soft Gold Glow */
+  max-width: 500px;
+  margin: auto;
+  color: white; /* White text for better contrast */
+}
+
+/* User info section styling */
+.user-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.user-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-right: 20px;
+  border: 3px solid #FFC107; /* Gold Border */
+}
+
+.user-details h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #FFC107; /* Gold Text */
+  margin-bottom: 10px;
+}
+
+.user-details p {
+  font-size: 16px;
+  color: #FFD700; /* Softer Gold */
+}
+
+/* Tab container and styling */
+.tabs-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.tab {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #002147; /* Darker Navy */
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 10px rgba(255, 193, 7, 0.3);
+}
+
+.tab.active {
+  background-color: #FFC107; /* Gold Active Tab */
+  color: #003366; /* Navy Text */
+}
+
+.tab:hover {
+  background-color: #FFD700; /* Brighter Gold */
+  transform: scale(1.05);
+}
+
+/* Tab content styling */
+.tab-content {
+  text-align: center;
+}
+
+.tab-content h3 {
+  font-size: 20px;
+  color: #FFC107; /* Gold Heading */
+}
+
+.tab-content p {
+  color: #FFD700; /* Softer Gold */
+}

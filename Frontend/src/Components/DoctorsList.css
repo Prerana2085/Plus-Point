@@ -1,0 +1,214 @@
+/* Universal Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  overflow-x: hidden; /* Prevent horizontal scroll on animations */
+}
+
+/* Title Animation */
+.Title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-size: xx-large;
+  color: #238e22;
+  animation: slideInLeft 1s ease-in-out; /* Slide from left */
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Doctor List Grid */
+.doctor-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 items per row */
+  gap: 20px;
+  padding: 20px;
+  width: 100%; /* Fill the container */
+  margin: 0 auto;
+  animation: fadeInGrid 1.2s ease-in-out; /* Fade-in animation for grid */
+}
+
+@keyframes fadeInGrid {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Individual Doctor Card */
+.doctor-item {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  animation: fadeInUp 0.8s ease-in-out; /* Cards appear from the bottom */
+  display: flex;
+  flex-direction: column; /* Ensure cards are aligned vertically */
+  height: 100%; /* Make sure all cards take equal height */
+  min-width: 350px; /* Set a minimum width for cards */
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.doctor-item:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+
+.doctor-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.doctor-details {
+  padding: 15px;
+  flex-grow: 1; /* Ensure content area takes up remaining space */
+}
+
+/* Headings and Text */
+h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+  animation: textZoomIn 0.8s ease-in-out;
+}
+
+@keyframes textZoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+strong {
+  color: #222;
+}
+
+/* Rating Stars */
+.doctor-rating .star {
+  font-size: 18px;
+  color: #FFB400; /* Star color */
+  animation: bounceIn 0.5s ease-in-out;
+  display: inline-block;
+  margin-right: 3px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.star:hover {
+  transform: scale(1.2); /* Enlarge stars on hover */
+}
+
+/* Bounce animation for stars */
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Animations */
+.doctor-item {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+  .doctor-list {
+    grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+  }
+}
+
+@media (max-width: 900px) {
+  .doctor-list {
+    grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+  }
+}
+
+@media (max-width: 600px) {
+  .doctor-list {
+    grid-template-columns: 1fr; /* 1 item per row */
+  }
+}
+
+.star {
+  font-size: 18px;
+  margin-right: 2px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.star.full {
+  color: #FFB400; /* Yellow for full stars */
+}
+
+.star.half {
+  background: linear-gradient(90deg, #e5ba55 50%, #ccc 50%); /* Half-yellow star */
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.star.empty {
+  color: #ccc; /* Grey for empty stars */
+}

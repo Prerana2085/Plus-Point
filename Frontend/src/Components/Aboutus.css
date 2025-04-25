@@ -1,0 +1,588 @@
+/* Remove gap between navbar and about us container */
+/* html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* About Us container */
+/* .aboutus-container {
+  display: flex;
+  justify-content: space-between; /* Text left, images right */
+  /* align-items: center; /* Vertically center content */
+  /*min-height: calc(100vh - 60px); /* Subtract navbar height (adjust 60px as needed) */
+ /* background-color: #f7f7f7;
+  padding: 0 100px; /* Only horizontal padding */
+  /*position: relative; /* For absolute positioning of animations */
+  
+/*} 
+
+/* Text section styling */
+/* .text-container {
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  text-align: center; 
+  width: 50%; 
+  animation: slideInLeft 1s ease-out; Add animation */
+/*}
+
+.catchy-heading {
+  font-size: 4rem; 
+  font-weight: bold;
+  color: rgb(59, 157, 135);
+  margin: 0;
+}
+
+.where-healing {
+  font-size: 2rem; 
+  font-weight: normal;
+  color: #555;
+  margin-top: 10px;
+}
+
+.subheading {
+  font-size: 1.75rem; 
+  color: #555;
+  margin-top: 20px;
+}
+
+.text-secondary {
+  --tw-text-opacity: 1;
+  color: rgb(59 157 135 / var(--tw-text-opacity, 1));
+}
+
+/* Image grid section styling */
+/*.image-container {
+  display: flex;
+  justify-content: flex-end; /* Align images to the extreme right */
+  /*width: 40%; /* Occupy 50% of the container width */
+/*}
+
+.images-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 images per row */
+  /*gap: 10px;
+  width: 90%; /* Adjust width for smaller images */
+/*}
+
+.header-image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1/1; /* Ensures square images */
+  /*border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  opacity: 0; /* Initially hide images */
+  /*animation: slideInRight 1s ease-out forwards; /* Add animation for images */
+  /*animation-delay: 0.5s; /* Delay the start of each image's animation */
+/*}
+
+/* Add delays for each image */
+/*.images-grid img:nth-child(1) {
+  animation-delay: 0.5s;
+}
+
+.images-grid img:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.images-grid img:nth-child(3) {
+  animation-delay: 1.5s;
+}
+
+.images-grid img:nth-child(4) {
+  animation-delay: 2s;
+}
+
+/* Text sliding animation from left to right */
+/*@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Image sliding animation from right to left */
+/*@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+/*@media (max-width: 768px) {
+  .aboutus-container {
+    flex-direction: column; /* Stack text and images */
+/*    align-items: center;
+  }
+
+  .text-container,
+  .image-container {
+    width: 100%; /* Full width for smaller screens */
+  /*}
+
+  .images-grid {
+    grid-template-columns: repeat(2, 1fr); /* Maintain 2 images per row */
+  /*  gap: 10px;
+  }
+
+  .header-image {
+    aspect-ratio: 1/1; /* Maintain square aspect ratio */
+ /* }
+}
+
+
+
+/* Services Section */
+/* .services-heading h2 {
+  color: black; /* Primary yellow color */
+  /* text-align: center; */
+  /* font-size: 2.5rem;
+  margin-bottom: 2rem; */
+  /* font-weight: bold;
+  padding-top: 10px;
+} */ 
+/* .services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 50px; */
+/* } */
+
+/* .service-box {
+  background-color: #fff;
+  border-radius: 8px;
+  width: 18%;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease-in-out;
+} */
+
+/* .service-box:hover {
+  transform: translateY(-10px); /* Slight hover effect */
+/* }  */
+
+/* .service-icon {
+  font-size: 3rem;
+  color: #3b9d87;
+  margin-bottom: 15px;
+} */
+
+/* .service-heading {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.service-description {
+  font-size: 1rem;
+  color: #777;
+} */
+
+
+
+/* Responsive Design for Smaller Screens */
+/* @media (max-width: 768px) {
+  .services-container {
+    flex-direction: column; /* Stack the service boxes in a column */
+    /* align-items: center; Center align the service boxes */
+  /* }  */
+
+  /* .service-box {
+    width: 80%; /* Make each service box take up more space */
+    /* margin-bottom: 20px; /* Add spacing between service boxes */
+  /* }   */
+
+  /* .service-icon {
+    font-size: 2.5rem; /* Smaller icon size on small screens */
+  /* } */ */
+
+  /* .service-heading {
+    font-size: 1.25rem; /* Adjust heading size */
+  /* }  */
+
+  /* .service-description {
+    font-size: 0.9rem; /* Adjust description font size */
+  /* }
+} */ */
+
+/* Optional: For extra small screens (e.g., mobile) */
+/* @media (max-width: 480px) {
+  .service-box {
+    width: 90%; /* Make the service boxes take up even more space */
+    /* margin-bottom: 15px; /* Reduce the bottom margin */
+  /* }  */
+
+  /* .service-icon {
+    font-size: 2rem; /* Further decrease icon size */
+  /* }  */
+
+  /* .service-heading {
+    font-size: 1.1rem; /* Adjust heading size */
+  /* } */ */
+
+  /* .service-description {
+    font-size: 0.85rem; /* Adjust description font size */
+  /* }
+}  */
+
+
+/* Why Us Heading */
+/* .why-choose-us-heading h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 20px;
+} */
+
+/* FAQ Section Styling */
+/* .faq-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 50px 0;
+  padding: 0 100px;
+} */
+
+/* .faq-image {
+  width: 45%;
+  border-radius: 8px; /* Rounded corners */
+  /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15), 0 4px 6px rgba(0, 0, 0, 0.1); /* Enhanced shadow effect */
+  /* transition: transform 0.3s ease, box-shadow 0.3s ease; Smooth hover animation */
+/* } */
+
+/* .faq-image:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  /* box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2), 0 6px 10px rgba(0, 0, 0, 0.15); /* Darker shadow on hover */
+/* } */
+
+
+/* .faq-content {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+} */
+
+/* FAQ Question Box */
+/* .faq-question-box {
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+} */
+
+/* .faq-question-box:hover {
+  background-color: #f9c74f; /* Yellow */
+  /* color: white;
+  transform: translateY(-5px); /* Slight upward hover effect */
+/* }  */
+
+/* .faq-question {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: black;
+} */
+
+/* .faq-answer {
+  display: none;
+  font-size: 1rem;
+  color: #555;
+  margin-top: 10px;
+} */
+
+/* .faq-question-box.active .faq-answer {
+  display: block;
+} */
+
+/* .faq-question-box.active {
+  background-color: #f9c74f;
+  color: white;
+}  */
+   /* chat gpt code for the improved version of the css code  */
+
+
+
+
+
+
+
+   /* Remove gap between navbar and about us container */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* About Us container */
+.aboutus-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: calc(100vh - 60px);
+  background-color: #f4f4f9; /* Soft gray-blue for a clean look */
+  padding: 0 100px;
+  position: relative;
+}
+
+/* Text section styling */
+.text-container {
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  text-align: center; 
+  width: 50%; 
+  animation: slideInLeft 1s ease-out;
+}
+
+.catchy-heading {
+  font-size: 4rem; 
+  font-weight: bold;
+  color: #00796b; /* Teal - professional and calming */
+  margin: 0;
+}
+
+.where-healing {
+  font-size: 2rem; 
+  font-weight: normal;
+  color: #333; /* Dark gray for readability */
+  margin-top: 10px;
+}
+
+.subheading {
+  font-size: 1.75rem; 
+  color: #555;
+  margin-top: 20px;
+}
+
+.text-secondary {
+  color: #00796b;
+}
+
+/* Image grid section styling */
+.image-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 40%;
+}
+
+.images-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  width: 90%;
+}
+
+.header-image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1/1;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  animation: slideInRight 1s ease-out forwards;
+}
+
+.images-grid img:nth-child(1) { animation-delay: 0.5s; }
+.images-grid img:nth-child(2) { animation-delay: 1s; }
+.images-grid img:nth-child(3) { animation-delay: 1.5s; }
+.images-grid img:nth-child(4) { animation-delay: 2s; }
+
+/* Text sliding animation */
+@keyframes slideInLeft {
+  from { transform: translateX(-100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+/* Image sliding animation */
+@keyframes slideInRight {
+  from { transform: translateX(100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .aboutus-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-container, .image-container {
+    width: 100%;
+  }
+}
+
+/* Services Section */
+.services-heading h2 {
+  color: #00796b;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.service-box {
+  background-color: #ffffff;
+  border-radius: 8px;
+  width: 18%;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.service-box:hover {
+  transform: translateY(-10px);
+}
+
+.service-icon {
+  font-size: 3rem;
+  color: #00796b;
+  margin-bottom: 15px;
+}
+
+.service-heading {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.service-description {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .services-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-box {
+    width: 80%;
+  }
+}
+
+/* Why Us Heading */
+.why-choose-us-heading h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #00796b;
+  margin-bottom: 20px;
+}
+
+/* FAQ Section Styling */
+.faq-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 50px 0;
+  padding: 0 100px;
+}
+
+.faq-image {
+  width: 45%;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.faq-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.faq-content {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* FAQ Question Box */
+.faq-question-box {
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  padding: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.faq-question-box:hover {
+  background-color: #f9c74f; /* Gold */
+  color: white;
+  transform: translateY(-5px);
+}
+
+.faq-question {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: black;
+}
+
+.faq-answer {
+  display: none;
+  font-size: 1rem;
+  color: #555;
+  margin-top: 10px;
+}
+
+.faq-question-box.active .faq-answer {
+  display: block;
+}
+
+.faq-question-box.active {
+  background-color: #f9c74f;
+  color: white;
+}
+
+/* Extra Small Screen Adjustments */
+@media (max-width: 480px) {
+  .service-box {
+    width: 90%;
+  }
+
+  .service-icon {
+    font-size: 2rem;
+  }
+
+  .service-heading {
+    font-size: 1.1rem;
+  }
+
+  .service-description {
+    font-size: 0.85rem;
+  }
+}

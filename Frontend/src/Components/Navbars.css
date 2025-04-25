@@ -1,0 +1,323 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+* {
+    box-sizing: border-box;
+  }
+
+  html,
+body {
+  overflow-x: hidden; 
+  margin: 0;
+  padding: 0; 
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    background-color: #FFFFFF;
+    padding: 10px 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    height: 100px;
+    width: 100vw;
+    max-width: 100%;
+    position: sticky; 
+    top: 0; 
+    z-index: 1000; 
+    box-sizing: border-box;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+    margin-right: 15px; 
+}
+
+.title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #1A1A1A; 
+    transform-origin: center; 
+    animation: shake 2s ease-in-out infinite; 
+    font-family: 'Poppins', sans-serif; 
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.navbar .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #1A1A1A; 
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: color 0.3s, transform 0.2s, border-bottom 0.3s;
+    position: relative;
+}
+
+.navbar .btn:hover {
+    color: #238e22;
+    transform: translateY(-2px); 
+}
+
+
+.navbar .btn::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #238e22; 
+    transition: width 0.3s;
+}
+
+.navbar .btn:hover::after {
+    width: 100%;
+}
+
+.navbar .btn-login-register {
+    background-color: #238e22; 
+    color: white; 
+    border: 2px solid #238e22; 
+    padding: 8px 15px; 
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+}
+
+.navbar .btn-login-register:hover {
+    background-color: white; 
+    color: #238e22;
+    border: 2px solid #238e22; 
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .logo-container {
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+} */
+
+/* Link Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+/* General Navbar Styles */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Add space between logo and links */
+  background-color: #FFFFFF; /* White background */
+  padding: 23px 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  height: 70px;
+  width: 100vw;
+  max-width: 100%;
+  position: sticky; /* Makes the navbar sticky */
+  top: 0; /* Sticks the navbar to the top of the page */
+  z-index: 1000; /* Ensures it stays above other content when scrolling */
+  box-sizing: border-box;
+}
+
+/* Logo Container */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 70px;
+  width: 80px;
+  margin-right: 15px; /* Space between logo and title */
+  margin: top 10px;
+}
+
+/* Title Styling */
+.title {
+  font-size: 30px;
+  font-weight: bold;
+  color: #1A1A1A; /* Dark gray for the title */
+  transform-origin: center; /* Ensures the text tilts around its center */
+  animation: shake 2s ease-in-out infinite; /* Apply animation */
+  font-family: 'Poppins', sans-serif; /* Custom font (Google Fonts) */
+  text-transform: uppercase; /* Uppercase the title */
+  letter-spacing: 2px; /* Add spacing between letters */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Subtle text shadow */
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+/* General Link Styles */
+.navbar .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: #1A1A1A; /* Dark gray for links */
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px;
+  transition: color 0.3s, transform 0.2s, border-bottom 0.3s;
+  position: relative;
+}
+
+/* Link Hover Effect */
+.navbar .btn:hover {
+  /* color: #238e22; /Primary color (yellow) for text on hover */
+  color: #238e22; /* Primary color (yellow) for text on hover */
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+
+/* Underline Effect on Link Hover */
+.navbar .btn::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #238e22; /* Primary color (yellow) underline */
+  transition: width 0.3s;
+}
+
+.navbar .btn:hover::after {
+  width: 100%; /* Full underline on hover */
+}
+
+/* Login and Register Buttons Specific Styles */
+.navbar .btn-login-register {
+  background-color: #238e22; /* Primary color (yellow) for login/register buttons */
+  color: white; /* White text for contrast */
+  border: 2px solid #238e22; /* Yellow border for buttons */
+  padding: 8px 15px; /* Slightly larger padding for better user interaction */
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+  text-decoration: none; /* Ensure no underline for buttons */
+}
+
+/* Login/Register Button Hover Effect (No underline) */
+.navbar .btn-login-register:hover {
+  background-color: white; /* White background on hover */
+  color: #238e22; /* Text color changes to yellow on hover */
+  border: 2px solid #238e22; /* Border stays yellow on hover */
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .logo-container {
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .nav-links {
+    display: none; /* Hide the links by default */
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 100px; /* Position below the navbar */
+    left: 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-links.open {
+    display: flex; /* Show links when the menu is open */
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+  }
+
+  .hamburger .line {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    border-radius: 5px;
+  }
+}
+
+/* Hamburger Menu - Show only on mobile */
+.hamburger {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .hamburger {
+    display: flex;
+  }
+}
+
+
+
+.btn-ambulance {
+  color: red;
+  background-color: white;
+  border: 2px solid red;
+  border-radius: 50%;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-ambulance:hover {
+  background-color: red;
+  color: white;
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

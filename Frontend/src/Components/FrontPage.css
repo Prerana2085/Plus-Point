@@ -1,0 +1,496 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+/* Hero Section Styling */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #0f8e2f, #fff);
+    color: black;
+    overflow: hidden;
+    position: relative;
+    animation: fadeInBackground 2s ease-in-out;
+    
+}
+
+.hero-section .hero-text {
+    flex: 1;
+    margin-left: 80px;
+    padding-right: 20px;
+    animation: slideInFromLeft 1.5s ease-out;
+}
+
+.hero-section .hero-text h1 {
+    font-size: 2.8em;
+    margin-bottom: 15px;
+}
+.one{
+    color:#fff;
+}
+
+.hero-section .hero-text p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color:#fff;
+}
+.appointment-button{
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #fff;
+    color:#0f8e2f ;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;    
+}
+
+.appointment-button:hover {
+    background-color: #0f8e2f;
+    color: #fff;
+}
+
+.hospital-logo {
+    flex: 1;
+    max-width: 50%;
+    height: auto;
+    border-radius: 8px;
+    animation: slideInFromRight 1.5s ease-out;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-section .hero-text {
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    .hospital-logo {
+        max-width: 70%;
+    }
+}
+
+/* Keyframe Animations */
+@keyframes fadeInBackground {
+    from {
+        background: linear-gradient(135deg, #0f8e2f, #fff);
+    }
+    to {
+        background: linear-gradient(135deg, #fff,#0f8e2f);
+    }
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* medical services */
+/* General Styles */
+/* General Styles for the section */
+.medical-services {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f0f4f7; /* Light background for a clean, professional look */
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .medical-services h2 {
+    font-size: 2.2rem;
+    color: #333;
+    margin-bottom: 40px;
+    font-weight: 600;
+  }
+  
+  /* Container for the icon cards */
+  .icons-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap; /* Ensures responsiveness on smaller screens */
+  }
+  
+  /* Style for each icon card */
+  .icon-card {
+    background-color: #fff; /* White background for the cards */
+    border: 1px solid #ddd; /* Light border for the cards */
+    border-radius: 10px;
+    padding: 30px;
+    width: 300px;
+    height:250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for a subtle 3D effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .icon-card i {
+    font-size: 3rem;
+    color: #0f8e2f; /* Ensure the icon is visible */
+  }
+  
+  
+  .icon-card span {
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: 500;
+    display: block;
+    margin-top: 10px;
+  }
+  
+  /* Hover effect for the icon cards */
+  .icon-card:hover {
+    transform: translateY(-10px); /* Slight upward movement on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+  }
+  
+  /* Keyframe for fade-in animation */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive styles for small screens */
+  @media (max-width: 768px) {
+    .icons-container {
+      gap: 20px;
+      flex-direction: column; /* Stack icons vertically on smaller screens */
+    }
+  
+    .icon-card {
+      width: 200px; /* Increase width slightly on small screens */
+      padding: 20px;
+    }
+  }
+  
+/* cards */
+.treatments h2{
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 30px;
+}
+.description-card {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-color: #f9f9f9; /* Light background for the card */
+    margin: 20px;
+    border-radius: 10px;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+}
+
+.description-content {
+    max-width: 60%; /* Cover 60% of the upper half */
+}
+
+.treatments {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.card {
+    background: #ffffff; /* White card background */
+    border: 2px solid #0f8e2f; /* Parrot green border */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    width: 200px;
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
+}
+
+.card img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card h3 {
+    margin: 10px 0;
+    color: #0f8e2f; /* Parrot green for card headings */
+    font-weight: 700;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Lift effect */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+
+/* What our patient says about */
+/* Patient Testimonials Slider */
+/* Patient Testimonials Section */
+.patient-testimonials {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.patient-testimonials h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.testimonials-slider {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/* Testimonial Card */
+.testimonial-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%; /* Ensures the card fills its container */
+    width: 400px; /* Fixed width for all cards */
+    margin: 0 auto; /* Centers the card within its container */
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Testimonial Text */
+.testimonial-card p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.testimonial-card h4 {
+    font-size: 1em;
+    color: #777;
+    font-weight: bold;
+}
+
+/* Dots Customization */
+.slick-dots li button:before {
+    color:#ffff ;
+    font-size: 12px;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #fff;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .testimonial-card {
+        max-width: 100%; /* Full width for smaller screens */
+    }
+}
+/* news */
+/* News Section */
+.news-updates {
+    padding: 50px 20px;
+    background-color: #f2f2f2;  /* Light background for the whole section */
+    animation: fadeIn 1.5s ease-in-out;  /* Smooth fade-in effect */
+}
+
+/* News Items (Cards) */
+.news-item {
+    margin-bottom: 30px;
+    padding: 25px;
+    background-color: #ffffff;  /* White background for each card */
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Adding hover effect */
+    border-left: 5px solid #0f8e2f; /* Colorful left border */
+    background: linear-gradient(135deg, #0f8e2f, #fff);
+}
+
+/* Hover Effect on Cards */
+.news-item:hover {
+    transform: translateY(-10px);  /* Card lifts up on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);  /* Enhanced shadow effect */
+}
+
+/* Heading of News Item */
+.news-item h3 {
+    font-size: 1.6rem;
+    color: #333333;  /* Darker color for heading */
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Paragraph of News Item */
+.news-item p {
+    font-size: 1.1rem;
+    color: #555555;
+    margin-bottom: 15px;
+}
+
+/* Read More Link */
+.read-more {
+    color: #0f8e2f;  /* Blue color for the link */
+    font-size: 1.1rem;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 15px;
+    position: relative;
+}
+
+/* Hover Effect on Read More */
+.read-more:hover {
+    text-decoration: underline;
+    color: #0f8e2f;  /* Darker blue on hover */
+}
+
+.read-more::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #0f8e2f;
+    bottom: -5px;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+/* Animation for News Section */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* contact */
+.contact-us {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.contact-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.telephone-image {
+    flex: 1; /* Takes up half of the space */
+}
+
+.telephone-image img {
+    width: 35%;  /* Makes image responsive to container */
+    height: auto;
+}
+
+.contact-form {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack elements vertically */
+    width: 100%; /* Full width of the form */
+    max-width: 500px; /* Maximum width for the form */
+    margin: 0 auto; /* Center the form */
+    padding: 20px; /* Padding inside the form */
+    background-color: #ffffff; /* White background for the form */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.contact-form label {
+    margin-bottom: 5px; /* Space below the label */
+    font-weight: bold; /* Bold text for labels */
+    color: #333; /* Dark text color */
+    text-align: left; /* Align text to the left */
+}
+
+.contact-form label.email,
+.contact-form label.message {
+    color: #0f8e2f; /* Highlight color for Email and Message labels */
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px; /* Padding inside the input and textarea */
+    font-size: 1rem; /* Base font size */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 15px; /* Space below each input */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for focus effects */
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #0f8e2f; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(15, 142, 47, 0.5); /* Add shadow on focus */
+    outline: none; /* Remove default outline */
+}
+
+.contact-form textarea {
+    resize: vertical; /* Allow vertical resizing only */
+    min-height: 100px; /* Minimum height for the textarea */
+}
+
+.contact-button {
+    padding: 12px 20px; /* Increased padding for better touch targets */
+    background-color: #0f8e2f; /* Green background color */
+    color: white; /* White text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1rem; /* Base font size */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition for background color and transform */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.contact-button:hover {
+    background-color: #0d7a24; /* Darker green on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.contact-button:active {
+    transform: translateY(0); /* Reset lift effect on click */
+}

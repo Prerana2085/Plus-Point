@@ -1,0 +1,25 @@
+/* .app-container {
+
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+} */
+
+/* change according to chatgpt */
+
+
+
+.app-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #003366; /* Navy Blue Background */
+  border: 2px solid #FFC107; /* Gold Border */
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(255, 193, 7, 0.3); /* Soft Gold Glow */
+  color: #ffffff; /* White Text for contrast */
+}

@@ -1,0 +1,53 @@
+.specialization-page {
+    width: 1400px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.specialization-page img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.doctor-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.doctor-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    width: 250px;
+    text-align: center;
+}
+
+.doctor-card img {
+    width: 250px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.doctor-card button {
+    background-color: #238e22;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.doctor-card button:hover {
+    background-color: #238e22;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}

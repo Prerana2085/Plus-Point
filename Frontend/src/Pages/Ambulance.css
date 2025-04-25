@@ -1,0 +1,60 @@
+.ambulance-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #ff3b3f, #ff7f50);
+    border-radius: 16px;
+    margin: 2rem;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    color: white;
+    text-align: center;
+  }
+  
+  .ambulance-box {
+    max-width: 600px;
+  }
+  
+  .ambulance-heading {
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.25);
+  }
+  
+  .ambulance-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #fffdd0;
+  }
+  
+  .call-button {
+    background-color: white;
+    color: #ff3b3f;
+    font-size: 1.1rem;
+    padding: 14px 28px;
+    border-radius: 50px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  .call-button:hover {
+    background-color: #ffe4e4;
+    transform: scale(1.05);
+  }
+  
+  .call-icon {
+    font-size: 1.2rem;
+  }
+  
+  .status-message {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #fff;
+  }
+  

@@ -1,0 +1,154 @@
+/* Global styles */
+.video-full-page {
+  background-color: #f4f8fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.video-navs {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 352px;
+  left: 180px;
+}
+
+/* Home page container */
+.video-home-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #4c8bf5, #7ec4ff);
+  padding: 0 20px;
+}
+
+/* Form container styling */
+.video-form-container {
+  background: white;
+  padding: 40px 50px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 450px; /* Ensure a nice width */
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.video-form-container:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.video-form-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #1d3557;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.video-input-field {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 2px solid #7ec4ff;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  background-color: #f9f9f9;
+  color: black;
+}
+
+.video-input-field:focus {
+  border-color: #4c8bf5;
+  box-shadow: 0 0 8px rgba(72, 126, 255, 0.5);
+}
+
+.video-submit-btn {
+  width: 100%;
+  padding: 14px;
+  background-color: #4c8bf5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.video-submit-btn:hover {
+  background-color: #3b79c7;
+  transform: translateY(-2px); /* Subtle hover effect */
+}
+
+.video-submit-btn:active {
+  background-color: #2a5fa3;
+  transform: translateY(0);
+}
+
+/* Small screen responsiveness */
+@media (max-width: 500px) {
+  .video-form-container {
+    padding: 30px 20px;
+  }
+
+  .video-form-title {
+    font-size: 1.8rem;
+  }
+
+  .video-input-field, .video-submit-btn {
+    font-size: 1rem;
+  }
+}
+
+/* Add animation for form container on load */
+@keyframes slideIn {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.video-form-container {
+  animation: slideIn 0.5s ease-out;
+}
+
+/* Add an animated divider */
+.stylish-hr {
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right, #0cbdc0, #055e94);
+  margin: 20px 0;
+  position: relative;
+}
+
+.stylish-hr::before,
+.stylish-hr::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #0cbdc0;
+}
+
+.stylish-hr::before {
+  left: -30px;
+}
+
+.stylish-hr::after {
+  right: -30px;
+}

@@ -1,0 +1,70 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Navbar Container */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: #1e69c5;
+    padding: 10px 20px;
+    position: sticky;
+    top: 60;
+    z-index: 10;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Navbar Left Section */
+  .navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  /* Logo Image */
+  .navbar-logo {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%; /* Optional: Makes the logo circular */
+  }
+  
+  /* Back Button */
+  .back-button {
+    background: none;
+    border: none;
+    color: #1e69c5;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: color 0.3s ease, transform 0.2s ease; /* Smooth hover effects */
+  }
+  
+  .back-button:hover {
+    color: #ff7f50; /* Changes text color to a coral shade */
+    background-color: white;
+    transform: scale(1.1); /* Slight zoom effect */
+  }
+  
+  .back-button:active {
+    transform: scale(0.95); /* Adds a pressed effect */
+  }
+  
+  /* Navbar Right Section */
+  .navbar-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Cart Icon */
+  .cart-link img {
+    height: 30px;
+    cursor: pointer;
+  }
+  

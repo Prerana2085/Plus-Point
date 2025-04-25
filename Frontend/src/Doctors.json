@@ -1,0 +1,120 @@
+[
+  {
+    "Name": "Dr. Sanchit Kaushal" ,
+    "Specialist": ["Cardiology"],
+    "Day": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+    "Time": "9:00 AM to 3:00 PM"
+  },
+  {
+    "Name": "Dr. Raghav jain" ,
+    "Specialist": ["Neurology"],
+    "Day": ["Monday", "Tuesday", "Wednesday","Thursday","Friday","Saturday"],
+    "Time": "9:00 AM to 3:00 PM"
+  },
+  {
+    "Name": "Dr. Prateek Anand" ,
+    "Specialist": ["Orthopedics"],
+    "Day": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+    "Time": "9:00 AM to 3:00 PM"
+  },
+  {
+    "Name": "Dr. suryansh Arora" ,
+    "Specialist": ["Oncology"],
+    "Day": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+    "Time": "9:00 AM to 3:00 PM"
+  },
+  {
+    "Name": "Dr. Pawan Goyal" ,
+    "Specialist": ["Gastroenterology"],
+    "Day": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+    "Time": "9:00 AM to 3:00 PM"
+  },
+  {
+    "Name": "Dr. Aakash Singh" ,
+    "Specialist": ["Nephrology"],
+    "Day": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+    "Time": "9:00 AM to 3:00 PM"
+  },
+  {
+    "Name": "Dr. Monika Kaushal" ,
+    "Specialist": ["Pulmonology"],
+    "Day": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+    "Time": "9:00 AM to 3:00 PM"
+  },
+  {"Name": "Dr. R.k Mehta" ,
+    "Specialist": ["Obstetrics and Gynecology"],
+    "Day": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+    "Time": "9:00 AM to 3:00 PM"
+  },
+  {
+    "Name": "Dr. Ramneek Sehgal" ,
+    "Specialist": ["Urology"],
+    "Day": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+    "Time": "9:00 AM to 3:00 PM"
+  },
+  {
+    "Name": "Dr. Anuj Jain" ,
+    "Specialist": ["Pediatrics"],
+    "Day": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+    "Time": "9:00 AM to 3:00 PM"
+  },
+  {"Name": "Dr. V.P Gaur" ,
+    "Specialist": ["Anesthesiology"],
+    "Day": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+    "Time": "9:00 AM to 3:00 PM"
+  },
+  {
+    "Name": "Pawan Bansal" ,
+    "Specialist": ["Dermatology"],
+    "Day": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+    "Time": "9:00 AM to 3:00 PM"
+  },
+  {
+    "Name": "Dr. J.P Kakkar" ,
+    "Specialist": ["Ear", "Nose", "Throat"],
+    "Day": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+    "Time": "9:00 AM to 3:00 PM"
+  },
+  {
+    "Name": "Dr. N.K Mathur" ,
+    "Specialist": ["Generat Surgery"],
+    "Day": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+    "Time": "9:00 AM to 3:00 PM"
+  },
+  {
+    "Name": "Duke Lempke" ,
+    "Specialist": ["Ophthalmology"],
+    "Day": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+    "Time": "9:00 AM to 3:00 PM"
+  },
+  {
+    "Name": "Dr. Tushar Sharma" ,
+    "Specialist": ["Pathalogy"],
+    "Day": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+    "Time": "9:00 AM to 3:00 PM"
+  },
+  {
+    "Name": "Dr. Garima Sehgal" ,
+    "Specialist": ["Radiology"],
+    "Day": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+    "Time": "9:00 AM to 3:00 PM"
+  },
+  {
+    "Name": "Dr. Samriti Sehgal" ,
+    "Specialist": ["Endocrinology"],
+    "Day": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+    "Time": "9:00 AM to 3:00 PM"
+  },
+  {
+    "Name": "Dr. Aakash Anand" ,
+    "Specialist": ["Cardiology"],
+    "Day": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+    "Time": "9:00 AM to 3:00 PM"
+  },
+  { 
+    "Name": "Dr. Kimti Lala",
+    "Specialist": ["Surgeon"],
+    "Day": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+    "Time": "9:00 AM to 3:00 PM"
+  }
+]

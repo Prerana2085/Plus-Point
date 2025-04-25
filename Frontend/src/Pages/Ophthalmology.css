@@ -1,0 +1,42 @@
+/* Example: Ophthalmology.css */
+.specialization-page {
+    padding: 20px;
+    text-align: center;
+}
+
+.specialization-page img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+.doctor-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.doctor-card {
+    margin: 20px;
+    text-align: center;
+    max-width: 250px;
+}
+
+.doctor-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #238e22;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #238e22;
+}

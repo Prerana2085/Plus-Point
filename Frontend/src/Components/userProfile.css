@@ -1,0 +1,199 @@
+/* General Reset and Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    padding: 20px;
+  }
+  
+  /* Container for the user profile */
+  .user-profile {
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 50px; /* Adjust top margin for better spacing */
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #444;
+  }
+  
+  /* Profile Section */
+  .profile-section {
+    margin-bottom: 30px;
+  }
+  
+  .profile-field {
+    margin-bottom: 15px;
+  }
+  
+  .profile-field label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .profile-field p,
+  .profile-field input {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  /* Form Input Style */
+  .profile-field input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+    background-color: #f9f9f9;
+  }
+  
+  .profile-field input:focus {
+    border-color: #007bff;
+  }
+  
+  /* Buttons */
+  button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+    color: #fff;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Edit Mode Button */
+  button.edit-button {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  button.cancel-button {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  button.save-button {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  /* Appointment Section */
+  .appointment-history {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .appointment-history ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .appointment-history li {
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .appointment-history li p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+  }
+  
+  .appointment-history li p strong {
+    color: #333;
+  }
+  
+  .appointment-history li p.status {
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .appointment-history li p.status.pending {
+    color: #ffc107;
+  }
+  
+  .appointment-history li p.status.confirmed {
+    color: #28a745;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .user-profile {
+      padding: 20px;
+      margin-top: 20px; /* Adjust top margin for mobile view */
+    }
+  
+    h1 {
+      font-size: 28px;
+    }
+  
+    h2 {
+      font-size: 20px;
+    }
+  
+    .profile-field input {
+      padding: 8px;
+    }
+  
+    button {
+      width: 100%;
+      padding: 12px;
+      font-size: 18px;
+    }
+  
+    .appointment-history li {
+      padding: 12px;
+    }
+  }
+  
+  /* Additional Styling */
+  button.edit-button, button.save-button {
+    width: 150px;
+    margin-right: 10px;
+  }
+  
+  button.cancel-button {
+    width: 150px;
+    margin-left: 10px;
+  }
+  
+  .profile-section button {
+    margin-top: 20px;
+    width: auto;
+    margin-right: 10px; /* Space between buttons */
+  }
+  

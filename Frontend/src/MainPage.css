@@ -1,0 +1,11 @@
+
+.mainpage{
+    /* display: flex; */
+    width: 99vw;
+    height: 200vh;
+    /* border:2px solid black; */
+    
+}
+.admin{
+    color:black;
+}

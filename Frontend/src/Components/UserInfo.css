@@ -1,0 +1,28 @@
+.userInfo {
+    display: flex;
+    align-items: center;
+    font-family: Arial, sans-serif; /* Use your preferred font */
+    color: #333; /* Text color */
+}
+
+.userInfo i {
+    margin-right: 8px; /* Space between the icon and text */
+    color: #007bff; /* Change to your preferred icon color */
+    font-size: 20px; /* Size of the bell icon */
+}
+
+.userInfo a {
+    text-decoration: none; /* Remove underline from the link */
+    font-weight: bold; /* Make the link text bold */
+    color: #007bff; /* Link color */
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+.userInfo a:hover {
+    color: #0056b3; /* Darker color on hover */
+}
+
+.admin-label {
+    margin-right: 4px; /* Space between "Admin" and the icon */
+    font-weight: bold; /* Make "Admin" text bold */
+}

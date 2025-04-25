@@ -1,0 +1,58 @@
+.logout-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+    background-color: #f4f4f9; /* Light background color */
+    font-family: 'Arial', sans-serif; /* Clean font */
+}
+
+.permission {
+    background: white; /* White background for the modal */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px 30px; /* Padding around the text */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center; /* Centered text */
+}
+
+h2 {
+    margin-bottom: 20px; /* Spacing below the heading */
+    color: #333; /* Dark text color */
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between; /* Space between buttons */
+}
+
+.cancel, .logout {
+    padding: 10px 20px; /* Padding for buttons */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners for buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.cancel {
+    background-color: #ccc; /* Gray background for cancel */
+    color: white; /* White text */
+}
+
+.cancel:hover {
+    background-color: #b3b3b3; /* Darker gray on hover */
+}
+
+.logout {
+    background-color: #ff4d4d; /* Red background for logout */
+    color: white; /* White text */
+}
+
+.logout:hover {
+    background-color: #e60000; /* Darker red on hover */
+}
+
+@media (max-width: 600px) {
+    .permission {
+        width: 90%; /* Responsive width on small screens */
+    }
+}
