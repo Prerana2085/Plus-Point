@@ -1,5 +1,51 @@
 .button-group {
     display: flex;
-    gap: 16px; /* You can increase this if needed */
+    gap: 16px;
     align-items: center;
-}
+    flex-wrap: wrap; /* allow wrapping on smaller screens */
+  }
+  
+  /* Style the buttons inside the group */
+  .button-group button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #007bff; /* Blue background */
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* Hover effect */
+  .button-group button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-2px); /* slight lift effect */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    .button-group {
+      flex-direction: column; /* Stack buttons vertically */
+      gap: 8px; /* Reduce gap */
+      align-items: stretch; /* Buttons take full width */
+    }
+  
+    .button-group button {
+      width: 100%; /* Make buttons full width */
+      font-size: 18px; /* Slightly bigger text for mobile */
+    }
+  }
+  
+  /* Dark mode support */
+  @media (prefers-color-scheme: dark) {
+    .button-group button {
+      background-color: #1e90ff; /* Lighter blue for dark mode */
+      color: #fff;
+    }
+  
+    .button-group button:hover {
+      background-color: #4682b4; /* Slightly darker on hover in dark mode */
+    }
+  }
+  
