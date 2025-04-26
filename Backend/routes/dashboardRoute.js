@@ -9,7 +9,8 @@ router.get("/admin-only", authorizeRole("admin"), (req, res) => {
 });
 
 router.post("/addDoctor", authorizeRole("admin"), async (req, res) => {
-    const {name,email,password,specialization,phone} = req.body;
+    console.log(req.body);
+    const { name, email, password, specialization, phone } = req.body;
 
     try {
         const newDoctor = await DoctorModel.create({
@@ -20,12 +21,11 @@ router.post("/addDoctor", authorizeRole("admin"), async (req, res) => {
             phone
         });
         res.status(201).json({ message: "Doctor added successfully", doctor: newDoctor });
-        await newDoctor.save();
     } catch (error) {
         res.status(500).json({ message: "Error adding doctor", error: error.message });
     }
+});
 
-})
 
 router.get("/count", authorizeRole("admin"), async (req,res)=>{
     try {

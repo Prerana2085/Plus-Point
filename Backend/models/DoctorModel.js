@@ -6,7 +6,6 @@ const doctorSchema = new moongose.Schema({
     password:{type:String, required:true},
     specialization:{type:String, required:true},
     phone:{type:String, required:true},
-    // fee:{type:String, required:true},
 })
 
 const DoctorModel = moongose.model("DoctorModel", doctorSchema);
