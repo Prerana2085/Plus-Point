@@ -8,9 +8,9 @@ const RoomPage = () => {
 
   useEffect(() => {
     if (meetingRef.current) {
-      const appID = import.meta.env.VITE_APP_ID;
-      const serverSecret = import.meta.env.VITE_SERVER_SECRET;
-      const kitToken = ZegoUIKitPrebuilt.generateKitTokenForTest(
+        const appID = Number(import.meta.env.VITE_APP_ID);
+        const serverSecret = import.meta.env.VITE_SERVER_SECRET;
+        const kitToken = ZegoUIKitPrebuilt.generateKitTokenForTest(
         appID,
         serverSecret,
         roomId,
