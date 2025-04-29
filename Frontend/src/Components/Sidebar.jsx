@@ -53,9 +53,9 @@ export const Sidebar = () => {
                     <Link to="/" style={linkStyle}>Home</Link>
                     <Link to="/dashboard" style={linkStyle}>Dashboard</Link>
                     <Link to="/HomeMedical" style={linkStyle}>Medicines</Link>
-                    <Link to="/Consultancy" style={linkStyle}>Consultancy</Link>
+                    {/* <Link to="/Consultancy" style={linkStyle}>Consultancy</Link> */}
                     <Link to="/Facilities" style={linkStyle}>Our Team</Link>
-                    <Link to="/Healthcheck" style={linkStyle}>Health CheckUp</Link>
+                    {/* <Link to="/Healthcheck" style={linkStyle}>Health CheckUp</Link> */}
                     <Link to="/AboutUs" style={linkStyle}>About Us</Link>
                     <Link to="/addDoctor" style={linkStyle}>Add Doctor</Link>
                 </nav>
